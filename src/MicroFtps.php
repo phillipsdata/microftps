@@ -129,7 +129,7 @@ class MicroFtps
         $this->passive = $opts['passive'];
         $this->port = $opts['port'];
         $this->timeout = $opts['timeout'];
-		$this->url = "ftps://$server";
+		$this->url = $server;
 		$this->curl = curl_init();
 
 		if (!$this->curl) {
